@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'Montserrat'; /* Гарнитура шрифта */
+  src: url(../fonts/Montserrat-Regular.woff2); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: 'Montserrat-bold'; /* Гарнитура шрифта */
+  src: url(../fonts/Montserrat-Bold.woff2); /* Путь к файлу со шрифтом */
+}
+
+body {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+h1 {
+  font-family: Montserrat-bold;
+  font-style: normal;
+  font-size: 52px;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-weight: bold;
+  color: #050c33;
+  font-size: 24px;
+}
+
+h3 {
+  font-weight: bold;
+  color: #050c33;
+  font-size: 18px;
+}
+
+/*
+  header content
+*/
+
+.title-text {
+  font-family: Montserrat;
+  line-height: 1.6;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 55px;
+  opacity: 0.7;
+}
+.page-title {
+  font-size: 24px;
+}
+
+header {
+  width: 100%;
+  position: relative;
+  color: #fff;
+  padding-top: 40px;
+}
+
+header .container:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/druplicon.svg) no-repeat center top;
+  background-size: contain;
+}
+
+.red-line-title {
+  font-family: Montserrat-bold;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.red-line-block:first-of-type .red-line-title {
+  font-size: 48px;
+  margin-top: -22px;
+  font-family: Montserrat-bold;
+  font-weight: bold;
+}
+
+.tariff-button {
+  font-family: Montserrat;
+  font-weight: bold;
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+  text-decoration: none;
+  padding: 22px 20px;
+  width: 220px;
+  max-width: 100%;
+  text-align: center;
+  border: 2px solid #f14d34;
+  border-radius: 5px;
+  letter-spacing: 0.06em;
+  transition: background 300ms;
+  margin: 0 auto;
+  margin-bottom: 55px;
+}
+
+.tariff-button:hover {
+  color: #fff;
+  text-decoration: none;
+  background: #f14d34;
+}
+
+.red-line-text {
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.red-line {
+  border-left: 3px solid #f14d34;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  min-height: 80px;
+  height: 100%;
+}
+
+.red-line a {
+  color: #f14d34;
+}
+
+.red-line-block {
+  margin-bottom: 30px;
+}
+
+.red-line-blocks {
+  margin-top: 50px;
+}
+
+.red-line-block img {
+  position: absolute;
+  left: 85px;
+  top: -32px;
+}
+
+#video-block {
+  z-index: -10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#video-block video {
+  min-height: 100%;
+  min-width: 100%;
+  filter: blur(2px);
+}
+
+#video-filter {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    font-family: Montserrat;
+    padding-top: 130px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    font-family: Montserrat;
+    padding-top: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-title {
+    font-size: 52px;
+  }
+  header .container:before {
+    background-size: inherit;
+    background-position: left top;
+  }
+  .container {
+    padding-top: 30px;
+  }
+  header {
+    font-family: Montserrat;
+    padding-top: 170px;
+  }
+  .red-line-block {
+    margin-bottom: 96px;
+  }
+  h1 {
+    font-family: Montserrat-bold;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 60px;
+    text-align: left;
+    z-index: 10;
+  }
+  h2 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 42px;
+  }
+  .title-text {
+    font-size: 18px;
+    text-align: left;
+  }
+  .tariff-button {
+    margin-left: 0;
+    margin-bottom: 155px;
+  }
+}

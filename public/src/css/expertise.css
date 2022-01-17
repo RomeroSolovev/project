@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Montserrat'; /* Гарнитура шрифта */
+  src: url(../fonts/Montserrat-Regular.woff2); /* Путь к файлу со шрифтом */
+ }
+
+ @font-face {
+  font-family: 'Montserrat-bold'; /* Гарнитура шрифта */
+  src: url(../fonts/Montserrat-Bold.woff2); /* Путь к файлу со шрифтом */
+ }
+
+ @font-face {
+  font-family: 'Montserrat-medium'; /* Гарнитура шрифта */
+  src: url(../fonts/Montserrat-Medium.woff2); /* Путь к файлу со шрифтом */
+ }
+
+.Expertise .red-line-text {
+    font-size: 16px;
+    max-width: 260px;
+  }
+
+  .Expertise .red-line-block {
+    margin-bottom: 30px;
+  }
+
+  .Expertise {
+    background: linear-gradient(261.2deg, rgba(255, 255, 255, 0.19) -114.85%, rgba(255, 255, 255, 0) 69.04%), #090a13;
+    color: #fff;
+    margin-top: -200px;
+    padding-top: 180px;
+    padding-bottom: 0px;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width: 1081px) {
+    .Expertise {
+      padding-top: 325px;
+    }
+  }
+
+  .Expertise h2 {
+    font-family: 'Montserrat-bold';
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  @media (min-width: 768px) {
+    .Expertise h2 {
+      margin: 22px 0px 65px 0px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .Expertise .block-with-redlines {
+      margin-bottom: 125px;
+    }
+  }
+
+  .Expertise::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/drupal-logo-2.svg) no-repeat right bottom;
+    background-size: contain;
+  }
+
+  .Expertise-picture {
+    position: relative;
+    width: 85%;
+    max-width: 650px;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+    .Expertise-picture {
+      width: 70%;
+    }
+    .Expertise h2 {
+      font-size: 42px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .Expertise-picture {
+      position: absolute;
+      width: 50%;
+    }
+  }
+
+  .Expertise-picture img {
+    width: 100%;
+    margin-bottom: -16%;
+    margin-top: 16%;
+  }
+
+.red-line-text {
+  font-family: 'Montserrat-medium';
+}
+
+  .red-line a {
+    color: #f14d34 !important;;
+  }

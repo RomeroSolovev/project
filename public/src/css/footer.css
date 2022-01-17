@@ -1,0 +1,32 @@
+.footer {
+  margin-top: 71px;
+  position: relative;
+  border-top: 1px solid #ffffff80;
+  background-image: url(../img/d2.svg);
+  background-repeat: no-repeat;
+  background-size: 32%;
+  background-position: bottom right;
+}
+.footer-container {
+  max-width: 1210px;
+  padding: 0 10px;
+  margin: 0 auto;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+  .space-for-navbar {
+    height: 80px;
+  }
+  .footer {
+    background-position: bottom 80px right;
+  }
+}

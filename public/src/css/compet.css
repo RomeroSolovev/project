@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Montserrat'; /* Гарнитура шрифта */
+  src: url(../fonts/Montserrat-Regular.woff2); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: 'Montserrat-bold'; /* Гарнитура шрифта */
+  src: url(../fonts/Montserrat-Bold.woff2); /* Путь к файлу со шрифтом */
+}
+
+.competencies {
+  margin: 100px 0px 180px;
+}
+
+.competencies h2 {
+  font-weight: bold;
+  font-family: 'Montserrat-bold';
+  font-size: 24px;
+  color: #050c33;
+  margin: 0 0 20px;
+}
+
+.competencies-main-text {
+  margin-bottom: 55px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #4f5a73;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #4f5a73;
+}
+
+.compet-block .text {
+  font-size: 14px;
+  width: 200px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.compet-block {
+  margin-bottom: 30px;
+}
+
+.competency-icon {
+  padding: 0;
+  display: inline-block;
+  margin-bottom: 15px;
+  position: relative;
+  margin-left: 54px;
+}
+
+.competency-icon:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -54px;
+  /*left: -2px;*/
+  bottom: -4px;
+  width: 115px;
+  height: 70px;
+  background: url(../img/iconspec.svg) no-repeat center;
+  background-size: contain;
+}
+
+@media (min-width: 1081px) {
+  .competency-icon {
+    margin-left: 0px;
+  }
+
+  .competencies h2 {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 768px) {
+  .compet-block .text {
+    font-size: 16px;
+    width: auto;
+    max-width: none;
+    margin: 0;
+  }
+
+  .competency-icon {
+    margin-bottom: 30px;
+  }
+
+  .competencies h2 {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Montserrat-bold'; /* Гарнитура шрифта */
+  src: url(../fonts/Montserrat-Bold.woff2); /* Путь к файлу со шрифтом */
+}
+
+.partnership h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat-bold';
+}
+
+.partnership-header {
+  width: 740px;
+  max-width: 100%;
+  font-size: 16px;
+  padding: 0 15px;
+  margin: 0 auto 20px;
+  color: #505570;
+  font-weight: 500;
+  line-height: 1.37;
+  text-align: center;
+}
+
+.carrousel_image img {
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.carrousel_image {
+  padding: 5px;
+}
+
+.carrousel_image div {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 10px;
+  width: auto;
+}
+
+#slider-2 .carrousel_image {
+  transform: translateX(50%);
+}
+
+@media (min-width: 768px) {
+  .partnership-header {
+    margin-bottom: 40px;
+  }
+
+  .partnership h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+}

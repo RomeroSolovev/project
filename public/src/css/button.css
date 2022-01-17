@@ -1,0 +1,68 @@
+:root {
+  --primary: #f14d34;
+}
+
+.btn {
+  padding: 8px 20px;
+  width: 220px;
+  height: 60px;
+  border-radius: 5px;
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.btn--white {
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+
+.btn--orange {
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  transition: all 0.3s ease-out;
+}
+
+.btn--black {
+  background-color: transparent;
+  border: 2px solid rgba(5, 12, 51, 0.2);
+
+  color: #050c33;
+  transition: all 0.3s ease-out;
+}
+
+.btn--medium {
+  padding: 8px 20px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.btn--medium:hover {
+  background-color: var(--primary);
+  transition: all 0.3s ease-out;
+}
+
+.btn--orange:hover {
+  color: #fff;
+}
+
+.btn--black:hover {
+  background-color: #050c33;
+  color: #fff;
+}
+
+.btn--form {
+  background-color: var(--primary);
+}
+
+.btn--form:hover {
+  background-color: red;
+  color: var(--primary);
+}
+
+.disabled:hover {
+  background-color: var(--primary);
+  color: #fff;
+}

@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Montserrat'; /* Гарнитура шрифта */
+  src: url(../fonts/Montserrat-Regular.woff2); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: 'Montserrat-bold'; /* Гарнитура шрифта */
+  src: url(../fonts/Montserrat-Bold.woff2); /* Путь к файлу со шрифтом */
+}
+
+.container .sol {
+  padding-bottom: 180px;
+}
+
+.quick-solutions {
+  padding-top: 50px;
+}
+
+.quick-solutions .quick-solutions-title {
+  margin-bottom: 55px;
+}
+
+.quick-solutions h2 {
+  font-family: 'Montserrat-bold';
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.time-title {
+  font-family: 'Montserrat-bold';
+  margin: 0 auto;
+  color: #050c33;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .quick-solutions {
+    padding-top: 100px;
+  }
+
+  .quick-solutions h2 {
+    font-size: 42px;
+  }
+
+  .time-title {
+    margin: 0 0;
+    text-align: left;
+  }
+}

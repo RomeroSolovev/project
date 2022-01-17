@@ -1,0 +1,226 @@
+@font-face {
+  font-family: Montserat;
+  src: url(../fonts/Montserrat-Medium.woff2);
+}
+
+* {
+  font-family: Montserat;
+}
+
+a {
+  cursor: pointer;
+}
+
+.navbar-absolute {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: auto;
+  background-color: #000;
+  z-index: 1000;
+}
+
+.nav-logo {
+  width: 160px;
+  margin-right: 60px;
+  margin-left: 15px;
+}
+
+.navbar {
+  padding-top: 2px;
+  padding-bottom: 6px;
+  padding-left: 0 !important;
+  margin-left: -15px;
+  margin-right: -15px;
+  flex-wrap: wrap;
+}
+
+.navbar-nav {
+  flex-wrap: wrap;
+  padding: 0 -20px;
+}
+
+.navbar li.nav-item > a.nav-link {
+  padding: 8px 20px;
+  border-bottom: 1px solid #312a2a;
+  line-height: 22px;
+  font-size: 12px;
+  font-style: normal;
+  color: #fff;
+}
+
+.navbar li {
+  border: none;
+  transition: border-color 400ms;
+  margin-left: 23px;
+}
+
+.navbar li:hover {
+  border: none;
+}
+
+.collapse {
+  border-bottom: solid 1px #fff;
+}
+
+nav .dropdown-menu {
+  background-color: inherit;
+  display: block;
+  position: static;
+  font-size: 12px;
+  border-radius: 0;
+  border: none;
+  margin-top: 0px;
+  padding: 8px 0;
+}
+
+nav .dropdown-item:first-child {
+  margin-top: 8px;
+}
+
+nav .dropdown-item:last-child {
+  margin-bottom: 8px;
+}
+
+nav .dropdown-item {
+  color: #fff;
+  transition: all 400ms;
+  padding: 3px 20px;
+  font-weight: 500;
+  border-bottom: 1px solid #312a2a;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+nav .dropdown-item:hover,
+nav .dropdown-item:focus {
+  color: #f14d34;
+  background-color: inherit;
+}
+
+nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.but {
+  width: auto;
+}
+
+.navbar-toggler-icon {
+  size: 10px;
+}
+
+.navbar-toggler {
+  margin-top: 1px;
+  width: 14%;
+}
+
+.navbar li.nav-item > a.nav-link:hover,
+.navbar li.nav-item > a.nav-link:focus {
+  color: #f14d34;
+  background-color: inherit;
+}
+
+.navbar-brand {
+  margin-right: 0px;
+}
+
+@media screen and (min-width: 992px) {
+  nav .dropdown-menu-second {
+    min-width: 10rem;
+    font-family: Montserat;
+  }
+
+  .dropdown-menu-second .dropdown-item {
+    padding-right: 20px;
+    font-family: Montserat;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar li.nav-item > a.nav-link {
+    padding: 0;
+    border-bottom: unset;
+    line-height: unset;
+    font-family: Montserat;
+  }
+
+  .navbar-absolute {
+    position: absolute;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    top: 30px;
+    background-color: unset;
+    font-family: Montserat;
+  }
+
+  .nav-logo {
+    width: 175px;
+    margin-left: auto;
+  }
+  .navbar {
+    font-family: Montserat;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+  }
+
+  .navbar li {
+    font-family: Montserat;
+    border-top: 8px solid transparent;
+    border-bottom: 3px solid transparent;
+  }
+  .navbar li:hover {
+    font-family: Montserat;
+    border-top: 8px solid transparent;
+    border-bottom: 3px solid #f14d34;
+  }
+
+  .collapse {
+    order: 1;
+    font-family: Montserat;
+    border-bottom: unset;
+  }
+
+  nav .dropdown-menu {
+    display: none;
+    font-family: Montserat;
+    position: unset;
+    background-color: #f14d34;
+    padding: unset;
+  }
+
+  nav .dropdown-menu-second {
+    min-width: 120px;
+  }
+
+  nav .dropdown-item {
+    font-family: Montserat;
+    border-bottom: unset;
+    line-height: unset;
+  }
+
+  .dropdown-menu-second .dropdown-item {
+    width: 135px;
+    font-family: Montserat;
+    padding-right: initial;
+  }
+
+  nav .dropdown-item:hover,
+  nav .dropdown-item:focus {
+    color: #fff;
+    font-family: Montserat;
+    background-color: #d13018;
+  }
+
+  .navbar li.nav-item > a.nav-link:hover,
+  .navbar li.nav-item > a.nav-link:focus {
+    color: #fff;
+    font-family: Montserat;
+  }
+}
